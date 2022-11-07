@@ -1,0 +1,163 @@
+body{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    *background-color: aqua;
+    
+}
+h1{
+    padding: 0%;
+    margin: 0%;
+}
+
+/* aqui cambien algunos estilos */
+.calculadora button{
+    border-radius: 50%;
+    background-color: rgb(87, 87, 216);
+    color: white;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    
+}
+
+
+
+/* aqui cambien algunos estilos */
+.titulo h1{
+    font-size: 1.5cm;
+}
+/* aqui cambien algunos estilos */
+.titulo{
+    display: flex;
+    justify-content:space-around;
+    margin: 20px 0;
+    
+}
+/* aqui cambien algunos estilos */
+.calculadora{
+    display:block;
+    margin:0 auto;
+    padding:20px;
+    background-color:#e13059;
+    width:350px;
+    height:600px;
+    border-radius: 25px;
+}
+/* aqui cambien algunos estilos */
+.calculadora td button{
+    display:block;
+    width:70px;
+    height: 70px;
+    font-size: 25px;
+    border-radius: 50%;
+}
+
+    
+/* añadi un div para meter todos los botones de numeros */
+.centro{
+
+}
+#resultado{
+    display:block;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    width:300px;
+    height: 100px;
+    line-height: 100px;
+    background-color:#fff;
+    border-radius: 25px;
+    border-style: solid;
+    border-color: black;
+}
+
+
+
+
+
+/* Dark mode */
+body.darkmode{
+    background-color:darkblue;
+    color:white;
+}
+
+
+/* boton de modo oscuro */
+.titulo button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: darkblue;
+    color: white;
+    border-style:solid;
+    border-color: rgb(0, 0, 0);
+}
+
+
+/* boton de modo noche */
+button #sun{
+    display: none;
+
+}
+body.darkmode button #moon{/* aqui cambien algunos estilos */
+    display: none;
+}
+body.darkmode button #sun{/* aqui cambien algunos estilos */
+    display: inline-block
+    
+}
+body.darkmode #resultado{/* aqui cambien algunos estilos */
+    background-color: black;
+    border-color: white;
+}
+body.darkmode .calculadora button{/* aqui cambien algunos estilos */
+    border-color: white;
+    background-color: rgb(0, 0, 95);
+}
+
+body.darkmode .calculadora{/* aqui cambien algunos estilos */
+    background-color:#6f001a;
+}
+body.darkmode .titulo button{/* aqui cambien algunos estilos */
+    background-color: white;
+    color: darkblue;
+    
+    
+}
+
+
+
+
+
+
+/* media de movil */
+
+
+@media only screen and (max-width: 480px) { 
+    body{ 
+    max-width: 100%;
+    }
+    .calculadora{
+        max-width: 100%;
+        margin-top: 20px;   
+    }
+    #resultado{
+        max-width: 100%;
+    }
+    .titulo {
+        margin-top: 10px;
+        line-height: 50px;
+        
+    }
+    .titulo h1{
+        font-size: 1cm;
+    }
+    
+} 
+
+
+/* width:350px;
+    height:500px; */
